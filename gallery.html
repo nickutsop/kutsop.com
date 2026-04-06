@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — N. W. Kutsop</title>
+  <meta name="description" content="Photo gallery — planetary science imagery, fieldwork, conferences, and Mackinac Island.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">N. W. Kutsop</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="data-code.html">Data &amp; Code</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <h1>Gallery</h1>
+  <p>Images from research, conferences, and the occasional Great Lakes sunset</p>
+</header>
+
+<main class="container">
+
+  <p>
+    A collection of images from fieldwork, conferences, spacecraft data visualizations, and life on Mackinac Island. Click any image to view it larger.
+  </p>
+
+  <!-- 
+    ================================================================
+    HOW TO ADD IMAGES
+    ================================================================
+    1. Put your image files in a folder called "gallery/" next to 
+       this HTML file.
+    2. Copy one of the gallery-item divs below and update:
+       - The src in the <img> tag (e.g., "gallery/my-photo.jpg")
+       - The alt text (describe the image for accessibility)
+       - The caption text
+    3. Images are automatically cropped to fit the grid. For best 
+       results, use images at least 800px wide.
+    ================================================================
+  -->
+
+  <div class="gallery-grid">
+
+    <!-- TEMPLATE: Copy and edit this block for each image -->
+    <!--
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="gallery/example.jpg" alt="Description of the image">
+      <div class="caption">Caption text here</div>
+    </div>
+    -->
+
+  </div>
+
+  <div class="placeholder-box" style="margin-top:24px;">
+    Gallery images coming soon. Add your photos to a <code>gallery/</code> folder and update this page — see the HTML comments for instructions.
+  </div>
+
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightbox-img">
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Contact</h4>
+      <p>Nicholas W. Kutsop, Ph.D.</p>
+      <p>PO Box 463</p>
+      <p>Mackinac Island, MI 49757</p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <p>Phone: <a href="tel:+19085682324">(908) 568-2324</a></p>
+      <p>Email: <a href="mailto:astro@kutsop.com">astro@kutsop.com</a></p>
+      <p><a href="https://orcid.org/0000-0001-7188-9044" target="_blank" rel="noopener">ORCID: 0000-0001-7188-9044</a></p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Nicholas W. Kutsop. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+function openLightbox(el) {
+  var img = el.querySelector('img');
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  lbImg.src = img.src;
+  lbImg.alt = img.alt;
+  lb.classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+</body>
+</html>

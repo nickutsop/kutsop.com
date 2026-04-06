@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — N. W. Kutsop</title>
+  <meta name="description" content="Blog posts by Nicholas Kutsop on planetary science, data analysis, and life on Mackinac Island.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">N. W. Kutsop</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="data-code.html">Data &amp; Code</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <h1>Blog</h1>
+  <p>Notes on science, spacecraft data, and occasional dispatches from Mackinac Island</p>
+</header>
+
+<main class="container">
+
+  <ul class="blog-list">
+
+    <!-- TEMPLATE: Copy and edit this block for each new post -->
+    <li>
+      <span class="blog-date">April 2026</span>
+      <a href="#" class="blog-title">Welcome — and why I'm finally making a website</a>
+      <p class="blog-excerpt">
+        After years of meaning to do this, I now have a place to write about planetary science for a broader audience, share notes on methods and tools, and occasionally post about life on an island with no cars. More to come.
+      </p>
+    </li>
+    <!-- END TEMPLATE -->
+
+  </ul>
+
+  <div class="placeholder-box" style="margin-top:40px;">
+    More posts coming soon. Check back or reach out at <a href="mailto:astro@kutsop.com">astro@kutsop.com</a> if there's a topic you'd like to see covered.
+  </div>
+
+  <!-- 
+    ================================================================
+    HOW TO ADD A NEW BLOG POST
+    ================================================================
+    Option A (simple): Add a new <li> to the blog-list above with 
+    the date, title, and excerpt. Link the title to a new HTML file 
+    (e.g., blog/2026-04-my-post.html).
+
+    Option B (scalable): If you want a proper blogging workflow, 
+    consider using a static site generator like Hugo or Jekyll that 
+    can convert Markdown files into HTML pages automatically. This 
+    keeps the same look and feel but makes writing much easier.
+    ================================================================
+  -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Contact</h4>
+      <p>Nicholas W. Kutsop, Ph.D.</p>
+      <p>PO Box 463</p>
+      <p>Mackinac Island, MI 49757</p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <p>Phone: <a href="tel:+19085682324">(908) 568-2324</a></p>
+      <p>Email: <a href="mailto:astro@kutsop.com">astro@kutsop.com</a></p>
+      <p><a href="https://orcid.org/0000-0001-7188-9044" target="_blank" rel="noopener">ORCID: 0000-0001-7188-9044</a></p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Nicholas W. Kutsop. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

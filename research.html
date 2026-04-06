@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — N. W. Kutsop</title>
+  <meta name="description" content="Research areas of Nicholas Kutsop: icy world surfaces, atmospheric hazes, spectral analysis, and spacecraft image processing.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">N. W. Kutsop</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="data-code.html">Data &amp; Code</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <h1>Research</h1>
+  <p>Surfaces, atmospheres, and methods for icy worlds</p>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2>Icy World Surface Composition</h2>
+    <p>
+      The surfaces of outer solar system moons record billions of years of geological and chemical evolution in their spectral signatures. I use imaging spectrometer data — primarily from Cassini VIMS — to map surface composition at regional scales, and I have developed a geospatial-topological clustering approach that identifies spectrally distinct terrain units without imposing assumptions about what those units should look like. My first-author paper in <em>Icarus</em> (2024) applied this method to Titan's equatorial region, revealing the spatial relationships between dune fields, interdune substrates, and compositionally distinct exposures that trace the history of surface-atmosphere interaction at low latitudes.
+    </p>
+    <p>
+      I am extending these methods to targets observed by JUICE/MAJIS (Ganymede) and plan to apply them to Europa Clipper data. The core question is the same across all these bodies: what is the spatial organization of surface materials, and what does that organization tell us about the processes — cryovolcanic, tectonic, radiolytic, depositional — that produced it?
+    </p>
+  </section>
+
+  <section>
+    <h2>Atmospheric Hazes and Aerosols</h2>
+    <p>
+      Titan and Pluto both host complex atmospheric haze layers that shape their energy budgets, drive photochemistry, and deposit organic material onto their surfaces. I study these hazes through limb-scatter observations — measurements of sunlight scattered by aerosol particles at the edge of a world's disk — which constrain particle size distributions and number densities as a function of altitude.
+    </p>
+    <p>
+      My work on Pluto (PSJ, 2021) used New Horizons/MVIC limb-scatter data to retrieve haze abundance and particle size profiles, providing some of the first quantitative constraints on Pluto's haze microphysics. On Titan (PSJ, 2022), I identified stratospheric haze bands in Cassini VIMS data and demonstrated that their morphology traces large-scale meridional circulation patterns in Titan's middle atmosphere. More recently, I co-authored a paper with Conor Nixon and collaborators in <em>Nature Astronomy</em> characterizing Titan's atmosphere in late northern summer using JWST and Keck observations.
+    </p>
+  </section>
+
+  <section>
+    <h2>Voyager True-Color Reprocessing</h2>
+    <p>
+      The Voyager 1 and 2 spacecraft returned some of the most iconic images in the history of exploration, but the original data products were calibrated with 1970s-era tools and have never been systematically reprocessed with modern photometric and colorimetric methods. I am developing a pipeline to produce perceptually accurate true-color imagery from the Voyager Grand Tour archive — not just cosmetically enhanced mosaics, but radiometrically grounded RGB composites that faithfully represent what a human eye would see at Jupiter, Saturn, Uranus, and Neptune.
+    </p>
+    <p>
+      This project builds a pixel-level database of the Voyager imaging archive and applies my existing spectrophotometric and geospatial-topological methods to the reprocessed data, enabling new science on targets like Europa chaos terrain and Triton plume microphysics that were previously limited by data quality.
+    </p>
+  </section>
+
+  <section>
+    <h2>Methods: Spectral Clustering and Phase Function Inversion</h2>
+    <p>
+      Two methodological threads run through my work. The first is geospatial-topological spectral clustering: a framework for identifying compositionally distinct terrain units in hyperspectral data by combining multivariate statistics (PCA, k-means) with geospatial topology — the spatial adjacency and boundary relationships among clusters — to produce maps that are both spectrally rigorous and geologically interpretable. The second is limb-scatter phase function inversion: a radiative-transfer technique for retrieving aerosol microphysical properties (size, shape, abundance) from the angular dependence of scattered sunlight observed at a body's limb. Both methods were developed and validated in my published work and are designed to be portable across missions and targets.
+    </p>
+  </section>
+
+  <section>
+    <h2>Mission Involvement</h2>
+    <p>
+      I have been a member of the Europa Clipper science team since 2015 and contributed to the CAESAR comet sample return and Oceanus Titan orbiter concept mission studies. I also spent several years as a contract researcher at JPL, where I performed photometric calibration for Mars Perseverance cameras and generated digital terrain models of comet 67P/Churyumov–Gerasimenko using photoclinometric methods.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Contact</h4>
+      <p>Nicholas W. Kutsop, Ph.D.</p>
+      <p>PO Box 463</p>
+      <p>Mackinac Island, MI 49757</p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <p>Phone: <a href="tel:+19085682324">(908) 568-2324</a></p>
+      <p>Email: <a href="mailto:astro@kutsop.com">astro@kutsop.com</a></p>
+      <p><a href="https://orcid.org/0000-0001-7188-9044" target="_blank" rel="noopener">ORCID: 0000-0001-7188-9044</a></p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Nicholas W. Kutsop. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
